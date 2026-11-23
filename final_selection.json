@@ -1,0 +1,17 @@
+{
+  "nihai": "R3",
+  "ayar": {
+    "optimizer": "adam",
+    "aktivasyon": "relu",
+    "batch": 64,
+    "dropout": 0.0,
+    "gizli": [
+      32
+    ],
+    "kirp": false,
+    "lr": 0.000409,
+    "olcek": "standard",
+    "weight_decay": 1e-05,
+    "scheduler": true
+  }
+}

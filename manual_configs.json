@@ -1,0 +1,87 @@
+{
+  "M1": {
+    "optimizer": "adamw",
+    "gizli": [
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "standard",
+    "kirp": false,
+    "scheduler": true
+  },
+  "M2": {
+    "optimizer": "adam",
+    "gizli": [
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "standard",
+    "kirp": false,
+    "scheduler": true
+  },
+  "M3": {
+    "optimizer": "sgd",
+    "gizli": [
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "standard",
+    "kirp": false,
+    "scheduler": true
+  },
+  "M4": {
+    "optimizer": "adamw",
+    "gizli": [
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "minmax",
+    "kirp": false,
+    "scheduler": true
+  },
+  "M5": {
+    "optimizer": "adamw",
+    "gizli": [
+      64,
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "standard",
+    "kirp": false,
+    "scheduler": true
+  },
+  "M6": {
+    "optimizer": "adamw",
+    "gizli": [
+      32
+    ],
+    "aktivasyon": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 64,
+    "dropout": 0.0,
+    "olcek": "standard",
+    "kirp": false,
+    "scheduler": false
+  }
+}
