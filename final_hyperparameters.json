@@ -1,0 +1,38 @@
+{
+  "nihai_aday": "R3",
+  "ayar": {
+    "optimizer": "adam",
+    "aktivasyon": "relu",
+    "batch": 64,
+    "dropout": 0.0,
+    "gizli": [
+      32
+    ],
+    "kirp": false,
+    "lr": 0.000409,
+    "olcek": "standard",
+    "weight_decay": 1e-05,
+    "scheduler": true
+  },
+  "esik": 0.5,
+  "ana_seed": 31087,
+  "kararlilik_seedleri": [
+    31087,
+    31187,
+    31287
+  ],
+  "egitim": {
+    "31087": {
+      "en_iyi_epoch": 26,
+      "durma_epoch": 41
+    },
+    "31187": {
+      "en_iyi_epoch": 46,
+      "durma_epoch": 61
+    },
+    "31287": {
+      "en_iyi_epoch": 35,
+      "durma_epoch": 50
+    }
+  }
+}
