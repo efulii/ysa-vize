@@ -26,11 +26,15 @@ Notebook'ları sırayla, aynı Colab oturumunda çalıştırın (Çalışma zama
 Şekil 1 (akış şeması) ve Şekil 3 (MLP mimarisi) `tools/sekil1_3_uret.py` ile üretilir: `python tools/sekil1_3_uret.py figures`.
 
 ## Kilitli test (zaman sıralı kayıt)
-| Commit | Tarih (UTC) | İçerik |
-|---|---|---|
-| `5a850c5` | 23.11.2026 11:06 | Split, EDA, M1–M6 / R1–R6 adayları, nested CV sonuçları, nihai seçim (R3) |
-| `e1dde65` | 23.11.2026 11:19 | **KİLİT:** `kilit/test_predictions_locked.csv` (etiketsiz), `final_hyperparameters.json`, eğitim geçmişleri |
-| sonraki | — | Test metrikleri, şekiller, rapor, notebook düzeni |
+| Commit | Tarih (UTC) | GitHub'daki mesaj | İçerik |
+|---|---|---|---|
+| `5a850c5` | 23.11.2026 11:06 | Split, EDA, M1-M6 ve R1-R6 adayları… | Veri bölünmesi, EDA, M1–M6 / R1–R6 adayları, nested CV sonuçları, nihai seçim (R3) |
+| `e1dde65` | 23.11.2026 11:19 | **KİLİT:** etiketsiz test tahminleri… | `kilit/test_predictions_locked.csv` (etiketsiz), `final_hyperparameters.json`, eğitim geçmişleri, kilit anındaki notebook |
+| `061a660` | 23.11.2026 11:30 | Add files via upload | Kilit dosyalarının kök dizine yüklenen ikinci kopyası (ilk yükleme denemesinden). `test_predictions_locked.csv` içeriği `kilit/` klasöründekiyle bayt bayt aynıdır. Test metrikleri bu commit'ten sonra hesaplanmıştır. |
+| `5afc51a` | 25.11.2026 13:10 | Add files via upload | Test metrikleri, bootstrap GA, seed kararlılığı, hata analizi (`results/`), şekiller (`figures/`), `report.pdf`, `01/02/03` notebook'ları, README, requirements |
+
+"Add files via upload", GitHub web arayüzünde mesaj kutusu boş bırakıldığında otomatik yazılan varsayılan mesajdır.
+Kilitli test kaydının bütünlüğünü korumak için commit geçmişi sonradan yeniden yazılmamış, açıklamalar bu tabloya eklenmiştir.
 
 Test etiketleri yalnızca kilit commit'inden sonra okunmuştur. `03_final_test.ipynb`, yeniden ürettiği tahminleri
 GitHub'daki kilitli dosyayla karşılaştırır (en büyük fark < 1e-6). Test etiketleri kamuya açık olduğundan bu, kör test değil,
