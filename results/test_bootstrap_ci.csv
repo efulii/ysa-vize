@@ -1,0 +1,7 @@
+model,metrik,nokta,alt_%2.5,ust_%97.5
+MLP seed 31087,AP,0.401,0.306,0.51
+MLP seed 31087,ROC_AUC,0.766,0.707,0.826
+MLP seed 31087,F1,0.267,0.162,0.374
+LogReg,AP,0.39,0.295,0.506
+LogReg,ROC_AUC,0.77,0.712,0.829
+LogReg,F1,0.25,0.145,0.353

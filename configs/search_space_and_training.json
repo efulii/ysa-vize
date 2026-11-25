@@ -1,0 +1,85 @@
+{
+  "manuel": "M1 temel (AdamW, [32], relu, lr 1e-3, wd 1e-4, batch 64, dropout 0, standard, kırpma yok, scheduler açık); M2 adam, M3 sgd(momentum 0.9), M4 minmax, M5 [64,32], M6 scheduler kapalı",
+  "rastgele": {
+    "gizli": [
+      [
+        16
+      ],
+      [
+        32
+      ],
+      [
+        64
+      ],
+      [
+        64,
+        32
+      ],
+      [
+        128,
+        64
+      ]
+    ],
+    "aktivasyon": [
+      "relu",
+      "tanh"
+    ],
+    "weight_decay": [
+      0.0,
+      1e-05,
+      0.0001,
+      0.001
+    ],
+    "batch": [
+      32,
+      64,
+      128
+    ],
+    "olcek": [
+      "standard",
+      "minmax",
+      "robust"
+    ],
+    "dropout": [
+      0.0,
+      0.2
+    ],
+    "kirp": [
+      false,
+      true
+    ],
+    "lr_loguniform": {
+      "sgd": [
+        0.001,
+        0.1
+      ],
+      "adam": [
+        0.0001,
+        0.01
+      ],
+      "adamw": [
+        0.0001,
+        0.01
+      ]
+    },
+    "ornekleyici": "sklearn ParameterSampler, optimizer basina n_iter=2, random_state = 31085 + 7 + i (sgd i=0, adam i=1, adamw i=2)"
+  },
+  "egitim": {
+    "max_epoch": 150,
+    "early_stopping_patience": 15,
+    "early_stop_alt_kume": 0.15,
+    "ReduceLROnPlateau": {
+      "mode": "min",
+      "factor": 0.5,
+      "patience": 5,
+      "min_lr": 1e-05
+    },
+    "izlenen": "early-stop alt kumesinde BCE kaybi",
+    "secim_metrigi": "ic CV average_precision_score (AP)",
+    "esik": 0.5
+  },
+  "cv": {
+    "dis": "StratifiedKFold(3, shuffle=True, random_state=31089)",
+    "ic": "StratifiedKFold(3, shuffle=True, random_state=31090)"
+  }
+}
